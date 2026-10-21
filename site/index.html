@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Каталог · team-ai-marketplace</title>
+  <meta name="description" content="Каталог плагінів, скілів і агентів Claude Code з team-ai-marketplace: пошук, склад плагіна, залежності, команда встановлення.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app" id="app" data-theme="dark">
+    <header class="top">
+      <a class="brand" href="#/"><div class="logo">◆</div><b>Каталог</b><span class="pill">team-ai-marketplace</span></a>
+      <div class="search"><span>⌕</span><input id="q" type="search" placeholder="Пошук по каталогу…" autocomplete="off" aria-label="Пошук по каталогу"></div>
+      <button class="icon-btn mono" id="palette-btn" title="Швидкий перехід (⌘K)">⌘K</button>
+      <button class="icon-btn" id="theme-btn" title="Тема" aria-label="Перемкнути тему">☾</button>
+      <a class="gh" id="gh-link" href="https://github.com/vbronetskyi/team-ai-marketplace" target="_blank" rel="noopener">GitHub ↗</a>
+    </header>
+    <div id="view"></div>
+    <footer id="foot"></footer>
+    <div id="layer"></div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+name: validate
+
+# Every pull request and push: the marketplace gate (structure, versions, dependencies,
+# namespaces, agent permissions, secrets) and Claude Code's own manifest validation.
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+      - name: Marketplace gate
+        run: node scripts/validate.mjs
+      - name: Gate tests
+        run: node --test scripts/*.test.mjs
+      - name: claude plugin validate (marketplace and every plugin)
+        run: |
+          npx -y @anthropic-ai/claude-code@2.1.306 plugin validate .
+          for p in plugins/*/; do
+            npx -y @anthropic-ai/claude-code@2.1.306 plugin validate "$p" --profile directory
+          done
+      - name: Catalog builds
+        run: node scripts/build-catalog.mjs --out /tmp/catalog-index.json
