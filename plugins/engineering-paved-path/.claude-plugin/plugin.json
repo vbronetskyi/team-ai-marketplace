@@ -1,0 +1,21 @@
+{
+  "name": "engineering-paved-path",
+  "displayName": "Engineering Paved Path",
+  "version": "1.0.0",
+  "description": "The team's paved road for TypeScript web work: React, Next.js App Router, Fastify, onion and frontend architecture, React Testing Library and application security skills.",
+  "author": {
+    "name": "Volodymyr Bronetskyi",
+    "url": "https://github.com/vbronetskyi"
+  },
+  "homepage": "https://vbronetskyi.github.io/team-ai-marketplace/#/plugin/engineering-paved-path",
+  "repository": "https://github.com/vbronetskyi/team-ai-marketplace",
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "nextjs",
+    "fastify",
+    "architecture",
+    "testing",
+    "security"
+  ]
+}
