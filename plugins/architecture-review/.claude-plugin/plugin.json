@@ -1,0 +1,24 @@
+{
+  "name": "architecture-review",
+  "displayName": "Architecture Review",
+  "version": "1.0.0",
+  "description": "A read-only architecture reviewer for diffs: layering and the dependency rule, module boundaries, shared contracts, frontend layout. Uses the paved-path architecture skills.",
+  "author": {
+    "name": "Volodymyr Bronetskyi",
+    "url": "https://github.com/vbronetskyi"
+  },
+  "homepage": "https://vbronetskyi.github.io/team-ai-marketplace/#/plugin/architecture-review",
+  "repository": "https://github.com/vbronetskyi/team-ai-marketplace",
+  "license": "MIT",
+  "keywords": [
+    "review",
+    "architecture",
+    "read-only"
+  ],
+  "dependencies": [
+    {
+      "name": "engineering-paved-path",
+      "version": "^1.0.0"
+    }
+  ]
+}
