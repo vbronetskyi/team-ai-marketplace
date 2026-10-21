@@ -1,0 +1,34 @@
+{
+  "name": "sdd-engineering",
+  "displayName": "SDD Engineering",
+  "version": "1.0.0",
+  "description": "Spec-driven development: spec-creator, implementation-planner, implementer and plan-verifier agents, the run-plan and workflow-retro skills, EARS rules, templates and a traceability check.",
+  "author": {
+    "name": "Volodymyr Bronetskyi",
+    "url": "https://github.com/vbronetskyi"
+  },
+  "homepage": "https://vbronetskyi.github.io/team-ai-marketplace/#/plugin/sdd-engineering",
+  "repository": "https://github.com/vbronetskyi/team-ai-marketplace",
+  "license": "MIT",
+  "keywords": [
+    "sdd",
+    "spec",
+    "plan",
+    "workflow",
+    "agents"
+  ],
+  "dependencies": [
+    {
+      "name": "engineering-paved-path",
+      "version": "^1.0.0"
+    },
+    {
+      "name": "research-tools",
+      "version": "^1.0.0"
+    },
+    {
+      "name": "architecture-review",
+      "version": "^1.0.0"
+    }
+  ]
+}
