@@ -1,0 +1,5 @@
+node_modules/
+.DS_Store
+site/catalog-index.json
+plugins/*/evals/results/
+plugins/*/.eval-deps/

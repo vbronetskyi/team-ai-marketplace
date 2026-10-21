@@ -1,0 +1,14 @@
+# Every change needs a review from the owners of what it touches.
+# One owner per plugin; the marketplace manifest, CI and release docs are platform-owned.
+
+*                                   @vbronetskyi
+
+/.claude-plugin/marketplace.json    @vbronetskyi
+/.github/                           @vbronetskyi
+/docs/                              @vbronetskyi
+/scripts/                           @vbronetskyi
+
+/plugins/engineering-paved-path/    @vbronetskyi
+/plugins/research-tools/            @vbronetskyi
+/plugins/architecture-review/       @vbronetskyi
+/plugins/sdd-engineering/           @vbronetskyi

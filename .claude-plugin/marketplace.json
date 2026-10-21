@@ -1,0 +1,68 @@
+{
+  "name": "team-ai-marketplace",
+  "owner": {
+    "name": "Volodymyr Bronetskyi",
+    "url": "https://github.com/vbronetskyi"
+  },
+  "description": "The team's Claude Code plugins: a paved road of engineering skills, research and architecture-review agents, and a spec-driven development workflow.",
+  "metadata": {
+    "description": "Team AI marketplace",
+    "version": "1.0.0",
+    "pluginRoot": "./plugins"
+  },
+  "plugins": [
+    {
+      "name": "engineering-paved-path",
+      "source": "./plugins/engineering-paved-path",
+      "description": "The team's paved road for TypeScript web work: React, Next.js App Router, Fastify, onion and frontend architecture, React Testing Library and application security skills.",
+      "version": "1.0.0",
+      "category": "engineering",
+      "tags": [
+        "react",
+        "nextjs",
+        "fastify",
+        "architecture",
+        "testing",
+        "security"
+      ]
+    },
+    {
+      "name": "research-tools",
+      "source": "./plugins/research-tools",
+      "description": "A read-only researcher agent that answers questions about a codebase or a library with path:line and URL evidence, before anything is planned.",
+      "version": "1.0.0",
+      "category": "research",
+      "tags": [
+        "research",
+        "read-only",
+        "agent"
+      ]
+    },
+    {
+      "name": "architecture-review",
+      "source": "./plugins/architecture-review",
+      "description": "A read-only architecture reviewer for diffs: layering and the dependency rule, module boundaries, shared contracts, frontend layout. Uses the paved-path architecture skills.",
+      "version": "1.0.0",
+      "category": "review",
+      "tags": [
+        "review",
+        "architecture",
+        "read-only"
+      ]
+    },
+    {
+      "name": "sdd-engineering",
+      "source": "./plugins/sdd-engineering",
+      "description": "Spec-driven development: spec-creator, implementation-planner, implementer and plan-verifier agents, the run-plan and workflow-retro skills, EARS rules, templates and a traceability check.",
+      "version": "1.0.0",
+      "category": "workflow",
+      "tags": [
+        "sdd",
+        "spec",
+        "plan",
+        "workflow",
+        "agents"
+      ]
+    }
+  ]
+}
