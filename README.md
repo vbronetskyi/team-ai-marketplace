@@ -41,6 +41,20 @@ Updates: `claude plugin marketplace update team-ai-marketplace` refreshes the ca
 plugins and versions exist), `claude plugin update sdd-engineering@team-ai-marketplace`
 updates the installed plugin.
 
+## Headless and CI runs
+
+A plugin's rules and templates live in the plugin cache (`~/.claude/plugins/cache/…`),
+outside the project. An interactive session asks before reading there; `claude -p` does
+not, so the agents silently go without them. A project that runs the workflow headless
+allows the read in its `.claude/settings.json`:
+
+```json
+{ "permissions": { "allow": ["Read(~/.claude/plugins/**)"] } }
+```
+
+Found in the first run outside DevDigest:
+[notes-api docs/team-marketplace.md](https://github.com/vbronetskyi/notes-api/blob/try/team-marketplace/docs/team-marketplace.md).
+
 ## Layout
 
 ```
