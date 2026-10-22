@@ -4,7 +4,7 @@
 ## Goals / Non-goals
 ## User stories
 ## Acceptance criteria (EARS)
-- AC-1 …
+- AC-1 [event] WHEN … the system shall …
 ## Edge cases
 ## Non-functional
 <!-- performance, security, cost — only when relevant, with numbers -->

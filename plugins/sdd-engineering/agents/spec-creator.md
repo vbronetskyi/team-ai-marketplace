@@ -23,7 +23,10 @@ edge cases.
 Write `specs/<feature>/spec.md` from the template in the `sdd-method` skill
 (`references/spec-template.md`). Acceptance criteria follow `rules/ears.md`: one
 behaviour each, with a trigger and a reaction a test can check, numbered `AC-1`, `AC-2`…
-Replace vague words ("fast", "works on big inputs", "helpful") with something measurable.
+and tagged with their EARS pattern right after the number —
+`AC-3 [unwanted] IF the URL is not http(s), THEN …` — so a reviewer sees at a glance which
+inputs have an unwanted-behaviour criterion and which do not. Replace vague words ("fast",
+"works on big inputs", "helpful") with something measurable.
 
 Before you hand over, check the spec: every AC atomic and testable; no two AC contradict;
 non-goals explicit; behaviour, not implementation; every input that comes from outside the
